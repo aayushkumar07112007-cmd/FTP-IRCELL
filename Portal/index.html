@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Foreign Training Portal - IIT Kharagpur</title>
+    <meta name="description" content="Foreign Training Program (FTP) by SIRC, IIT Kharagpur: international research internships with centralized support and mentorship.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR HEADER -->
+    <header class="header-navbar" id="header">
+        <div class="nav-logos">
+            <img src="iitkgp.png" alt="Logo 1" onerror="this.remove()">
+            <img src="irc.png" alt="Logo 2" onerror="this.remove()">
+        </div>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home" onclick="closeNav()">Home</a></li>
+                <li><a href="#about" onclick="closeNav()">About Us</a></li>
+                <li><a href="#team" onclick="closeNav()">Team</a></li>
+                <li><a href="#testimonials" onclick="closeNav()">Testimonials</a></li>
+                <li><a href="#blogs" onclick="closeNav()">FTP Blogs</a></li>
+                <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+                <li><a href="#faq" onclick="closeNav()">F.A.Q</a></li>
+            </ul>
+            <a href="#signin" class="btn-signin">SIGN IN</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- HOME / HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-copy">
+            <span class="hero-eyebrow">Foreign Training Program &middot; SIRC, IIT Kharagpur</span>
+            <h1>Your Gateway to <em>Global</em> Excellence</h1>
+            <p>Are extensive research projects and a dream summer at a prestigious university abroad, your goals this year? If yes, we are here to assist you to accomplish those with our FTP Portal!</p>
+            <ul class="hero-points">
+                <li><i class="fa-solid fa-flask"></i> Research internships abroad</li>
+                <li><i class="fa-solid fa-handshake-angle"></i> Centralized support</li>
+                <li><i class="fa-solid fa-user-graduate"></i> Mentorship</li>
+            </ul>
+            <div class="hero-actions">
+                <a href="#register" class="btn-primary">Register Now</a>
+                <a href="#about" class="hero-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-globe" aria-hidden="true">
+            <canvas id="globeCanvas"></canvas>
+        </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <section id="about">
+        <div class="about-head">
+            <h2 class="section-title about-title reveal"><span class="about-title-pre">About</span> <span class="about-title-main">Foreign Training <em>Program</em></span></h2>
+            <p class="about-sub reveal">The Foreign Training Program at IIT Kharagpur connects students with research internships at reputed institutions across the globe.</p>
+        </div>
+
+        <div class="about-layout">
+            <article class="about-feature reveal reveal-left">
+                <div class="about-feature-icon" aria-hidden="true"><i class="fa-solid fa-earth-asia"></i></div>
+                <p>Unlocking International Potential: A Gateway to Research and Internships Across the Globe</p>
+                <ul class="about-feature-list">
+                    <li><i class="fa-solid fa-flask" aria-hidden="true"></i><div><strong>Research internships abroad</strong><span>Meaningful research with renowned faculty and researchers at reputed universities.</span></div></li>
+                    <li><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i><div><strong>Centralized support</strong><span>Simplified procedures that reduce administrative hurdles.</span></div></li>
+                    <li><i class="fa-solid fa-user-graduate" aria-hidden="true"></i><div><strong>Structured mentorship</strong><span>Reliable guidance and curated resources at every step.</span></div></li>
+                    <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i><div><strong>Reputed global institutions</strong><span>Diverse cultural and professional environments.</span></div></li>
+                </ul>
+            </article>
+
+            <div class="about-programs">
+                <article class="about-program reveal reveal-right">
+                    <div class="about-program-icon" aria-hidden="true"><i class="fa-solid fa-earth-asia"></i></div>
+                    <div>
+                        <span class="about-program-tag">01 &middot; Enabling Research Without Borders</span>
+                        <h3>Global Academic Exposure</h3>
+                        <p>Students&rsquo; International Relations Cell of IIT Kharagpur empowers students to pursue meaningful research internships across the globe. These opportunities provide an immersive experience in diverse academic cultures, promoting collaboration with renowned faculty and researchers. Internships abroad help students cultivate critical thinking, cross-cultural fluency, and leadership abilities. With each experience, students return not only with technical expertise but also with the confidence and insight to contribute to global academic and industrial landscapes. Our aim is to build globally-aware innovators who are prepared to lead in an interconnected world.</p>
+                    </div>
+                </article>
+                <article class="about-program reveal reveal-right" style="--d:0.15s">
+                    <div class="about-program-icon" aria-hidden="true"><i class="fa-solid fa-passport"></i></div>
+                    <div>
+                        <span class="about-program-tag">02 &middot; Streamlined Applications for International Training</span>
+                        <h3>Foreign Internship Facilitation</h3>
+                        <p>The Foreign Training Program at IIT Kharagpur has been introduced to provide students with easier access to prestigious international internship opportunities. Securing overseas internships often involves a lengthy application process, numerous formalities, and uncertainty regarding reliable guidance. To address these challenges, the program simplifies procedures by offering centralized support, structured mentorship, and access to curated resources that reduce administrative hurdles. This allows students to focus their energy on academic excellence, innovative research, and meaningful professional growth. Beyond academic exposure, the program ensures that students experience diverse cultural and professional environments by engaging with reputed global institutions.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="benefits-layout">
+        <div class="benefits-intro reveal reveal-left">
+            <h2 class="section-title why-title">Why <em>FTP?</em></h2>
+            <p>Foreign Training Program (FTP), organized by SIRC at IIT Kharagpur, offers transformative opportunities that broaden students' academic exposure and professional growth through international collaboration.</p>
+            <a href="#register" class="btn-primary benefits-apply">Apply <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="benefits-grid">
+            <div class="card reveal reveal-zoom" style="--d:0.00s">
+                <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-earth-asia"></i></div>
+                <h3>Global Research Exposure</h3>
+                <p>Collaborate with prestigious international universities and research institutions. Gain firsthand experience in global research environments, exposing yourself to diverse academic cultures and groundbreaking innovations.</p>
+            </div>
+            <div class="card reveal reveal-zoom" style="--d:0.18s">
+                <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Enhanced Career Prospects</h3>
+                <p>The program fosters diverse skill development through global exposure, shaping you into a well-rounded individual ready for both competitive job markets and advanced academic journeys.</p>
+            </div>
+            <div class="card reveal reveal-zoom" style="--d:0.36s">
+                <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+                <h3>Networking Opportunities</h3>
+                <p>Collaborate with global researchers and students, expanding your network and unlocking new pathways for future endeavors.</p>
+            </div>
+            <div class="card reveal reveal-zoom" style="--d:0.54s">
+                <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Skill Development</h3>
+                <p>Collaborate with diverse peers and researchers, gain access to cutting-edge facilities, and develop advanced research and problem-solving skills.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="impact" class="stats-section">
+        <div class="stats-head reveal">
+            <span class="stats-eyebrow">Our Impact</span>
+            <h2 class="stats-title">Numbers that take KGP to the world</h2>
+        </div>
+        <div class="stats-container">
+            <div class="stat-item reveal reveal-zoom">
+                <h2 data-count="220" data-suffix="+">0+</h2>
+                <p>Offers Received</p>
+            </div>
+            <div class="stat-item reveal reveal-zoom" style="--d:0.1s">
+                <h2 data-count="65" data-suffix="+">0+</h2>
+                <p>Projects</p>
+            </div>
+            <div class="stat-item reveal reveal-zoom" style="--d:0.2s">
+                <h2 data-count="14.5" data-suffix="M" data-decimals="1">0.0M</h2>
+                <p>Funding</p>
+            </div>
+            <div class="stat-item reveal reveal-zoom" style="--d:0.3s">
+                <h2 data-count="20" data-suffix="+">0+</h2>
+                <p>Countries</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fields">
+        <h2 class="section-title reveal">Top Fields</h2>
+        <p class="fields-sub reveal">Exploring the frontiers where innovation thrives and future possibilities unfold</p>
+        <div class="fields-grid">
+            <div class="field-card reveal" style="--d:0.00s" tabindex="0">
+                <div class="field-inner">
+                    <div class="field-front">
+                        <div class="field-icon" aria-hidden="true"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Machine Learning</h3>
+                        <span class="field-hint">Hover to know more</span>
+                    </div>
+                    <div class="field-back">
+                        <h3>Machine Learning</h3>
+                        <p>Examine how algorithms are designed to enable computers to analyze data, identify patterns, and make decisions with increasing accuracy through iterative learning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="field-card reveal" style="--d:0.08s" tabindex="0">
+                <div class="field-inner">
+                    <div class="field-front">
+                        <div class="field-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Statistics</h3>
+                        <span class="field-hint">Hover to know more</span>
+                    </div>
+                    <div class="field-back">
+                        <h3>Statistics</h3>
+                        <p>Investigate techniques for analyzing and interpreting data to draw meaningful conclusions, identify trends, and guide decision-making in diverse applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="field-card reveal" style="--d:0.16s" tabindex="0">
+                <div class="field-inner">
+                    <div class="field-front">
+                        <div class="field-icon" aria-hidden="true"><i class="fa-solid fa-robot"></i></div>
+                        <h3>Robotics</h3>
+                        <span class="field-hint">Hover to know more</span>
+                    </div>
+                    <div class="field-back">
+                        <h3>Robotics</h3>
+                        <p>Investigate the creation of autonomous systems that combine sensing, control, and automation to perform tasks with minimal human input.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="field-card reveal" style="--d:0.24s" tabindex="0">
+                <div class="field-inner">
+                    <div class="field-front">
+                        <div class="field-icon" aria-hidden="true"><i class="fa-solid fa-wifi"></i></div>
+                        <h3>IoT</h3>
+                        <span class="field-hint">Hover to know more</span>
+                    </div>
+                    <div class="field-back">
+                        <h3>IoT</h3>
+                        <p>Investigate the development and optimization of interconnected devices and networks to enhance connectivity and functionality across various applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="field-card reveal" style="--d:0.32s" tabindex="0">
+                <div class="field-inner">
+                    <div class="field-front">
+                        <div class="field-icon" aria-hidden="true"><i class="fa-solid fa-dna"></i></div>
+                        <h3>Biotechnology</h3>
+                        <span class="field-hint">Hover to know more</span>
+                    </div>
+                    <div class="field-back">
+                        <h3>Biotechnology</h3>
+                        <p>Apply engineering principles to biological systems to develop new technologies and products for health, sustainable manufacturing, and environmental solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="field-card reveal" style="--d:0.40s" tabindex="0">
+                <div class="field-inner">
+                    <div class="field-front">
+                        <div class="field-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+                        <h3>Software Development</h3>
+                        <span class="field-hint">Hover to know more</span>
+                    </div>
+                    <div class="field-back">
+                        <h3>Software Development</h3>
+                        <p>Explore innovative methods and technologies for designing, coding, and optimizing software to improve functionality, efficiency, and user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team">
+        <h2 class="section-title">Executive Team 2026</h2>
+        <!-- TEAM PHOTOS: put each photo in the images/team/ folder and make sure the file name matches the src below
+             (square, face centred, at least 400x400px works best). If a photo is missing, the initials are shown instead. -->
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-avatar" data-initials="AK"><img src="images/team/aayush-kumar.jpg" alt="Aayush Kumar" loading="lazy" onerror="this.remove()"></div>
+                <h3>Sumit Nahak</h3>
+                <p>General Secretary</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-avatar" data-initials="AS"><img src="images/team/aditi-sharma.jpg" alt="Aditi Sharma" loading="lazy" onerror="this.remove()"></div>
+                <h3>Abhishek Lakote</h3>
+                <p>General Secretary</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-avatar" data-initials="RD"><img src="images/team/rohan-das.jpg" alt="Rohan Das" loading="lazy" onerror="this.remove()"></div>
+                <h3>Bidisha Mondal</h3>
+                <p>Coordinator</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-avatar" data-initials="PP"><img src="images/team/priya-patel.jpg" alt="Priya Patel" loading="lazy" onerror="this.remove()"></div>
+                <h3>Rithika S</h3>
+                <p>Coordinator</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-avatar" data-initials="KS"><img src="images/team/karan-singh.jpg" alt="Karan Singh" loading="lazy" onerror="this.remove()"></div>
+                <h3>Hetarth Somani</h3>
+                <p>Coordinator</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-avatar" data-initials="NG"><img src="images/team/neha-gupta.jpg" alt="Neha Gupta" loading="lazy" onerror="this.remove()"></div>
+                <h3>Md Iesa Ali Ahmed</h3>
+                <p>Coordinator</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-avatar" data-initials="VR"><img src="images/team/vikram-reddy.jpg" alt="Vikram Reddy" loading="lazy" onerror="this.remove()"></div>
+                <h3>Harsh Chauhan</h3>
+                <p>Coordinator</p>
+                <div class="team-social">
+                    <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="mail" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="carousel-section">
+        <h2 class="section-title reveal">Testimonials</h2>
+        <div class="carousel-container reveal" id="carouselContainer">
+
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide is-active">
+                    <div class="testimonial-content-box">
+                        <div class="testimonial-header">
+                            <div class="testimonial-meta">
+                                <h3>Hrituraj Dutta</h3>
+                                <p>University of Strathclyde, Scotland</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">
+                            "First of all, it was an enriching experience to have an FT. In my internship, we had a team consisting of interns, Research Scholars and profs of the University Of Strathclyde and Democritus University of Thrace, Greece. It was a sort of joint project between the universities. I personally got to learn a lot from other people coming from different backgrounds. More importantly, I actually understood how to apply the theory we learn in a regular classroom to different problems at hand pertaining to the relevant domain."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <div class="testimonial-content-box">
+                        <div class="testimonial-header">
+                            <div class="testimonial-meta">
+                                <h3>Sneha Patil</h3>
+                                <p>Technical University of Munich, Germany</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">
+                            "The FTP portal made applying for international research incredibly transparent. Securing an internship at TUM allowed me to work with state-of-the-art robotics hardware. The networking opportunities I unlocked here have set up my path for graduate studies perfectly."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <div class="testimonial-content-box">
+                        <div class="testimonial-header">
+                            <div class="testimonial-meta">
+                                <h3>Rahul Jain</h3>
+                                <p>Nanyang Technological University, Singapore</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">
+                            "I used to spend hours sending cold emails with little success. Through the SIRC portal, I found a lab directly aligned with my interest in material sciences. The structured mentorship before the internship helped me adapt instantly when I arrived in Singapore."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots">
+            <button class="carousel-dot active" onclick="currentSlide(0)" aria-label="Show testimonial 1"></button>
+            <button class="carousel-dot" onclick="currentSlide(1)" aria-label="Show testimonial 2"></button>
+            <button class="carousel-dot" onclick="currentSlide(2)" aria-label="Show testimonial 3"></button>
+        </div>
+    </section>
+
+    <!-- FTP BLOGS SECTION -->
+    <section id="blogs">
+        <h2 class="section-title reveal">FTP Blogs</h2>
+        <div class="blog-carousel reveal" id="blogCarousel">
+            <button class="blog-btn prev" onclick="moveBlog(-1)" aria-label="Previous blog"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="blog-viewport">
+                <div class="blog-grid" id="blogTrack">
+                <div class="blog-card">
+                    <span class="blog-badge">FTP Blog</span>
+                    <h3>Navigating International Research Applications</h3>
+                    <p>Discover expert tips and insider strategies on how to build a stellar profile, write compelling statements of purpose, and choose the right professors and labs that align with your long-term research career goals.</p>
+                    <a href="#" class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-card">
+                    <span class="blog-badge">FTP Blog</span>
+                    <h3>Maximizing Remote &amp; On-Site Global Internships</h3>
+                    <p>Whether your internship is virtual or overseas in a world-class laboratory, learn how to adapt quickly to diverse academic cultures, manage cross-border communication, and make lasting professional connections.</p>
+                    <a href="#" class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-card">
+                    <span class="blog-badge">FTP Blog</span>
+                    <h3>Visa Processing &amp; Travel Grant Guide</h3>
+                    <p>A comprehensive checklist and breakdown of securing visas for top destinations in Europe, North America, and Asia. Plus, insights on applying for travel grants through your institution to alleviate financial barriers.</p>
+                    <a href="#" class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                                <!-- ===== BLOG TEMPLATE: copy one <div class="blog-card"> block to add another blog. The slider adjusts automatically. ===== -->
+                <div class="blog-card">
+                    <span class="blog-badge">FTP Blog</span>
+                    <h3>Crafting a Strong Statement of Purpose</h3>
+                    <p>Learn how to present your research interests, projects and goals clearly so that professors at international universities can see exactly why you are the right fit for their lab.</p>
+                    <a href="#" class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-card">
+                    <span class="blog-badge">FTP Blog</span>
+                    <h3>Student Stories: Life on Campus Abroad</h3>
+                    <p>Hear from IIT Kharagpur students about day-to-day life at partner universities, from settling in and finding accommodation to balancing research work with exploring a new country.</p>
+                    <a href="#" class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-card">
+                    <span class="blog-badge">FTP Blog</span>
+                    <h3>Funding Your Foreign Internship</h3>
+                    <p>An overview of stipends, scholarships and institutional support available to students, along with practical advice on budgeting for travel, housing and living costs abroad.</p>
+                    <a href="#" class="blog-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                </div>
+            </div>
+            <button class="blog-btn next" onclick="moveBlog(1)" aria-label="Next blog"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="blog-dots" id="blogDots"></div>
+    </section>
+
+    <section id="faq">
+        <h2 class="section-title reveal">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <details class="reveal">
+                <summary>How is it different applying through a portal as compared to applying through personal mailing?</summary>
+                <div class="faq-content">
+                    The FTP portal streamlines the process by connecting you directly with vetted professors and institutions actively looking for interns. It saves you from sending hundreds of cold emails and offers structured guidance.
+                </div>
+            </details>
+            <details class="reveal" style="--d:0.08s">
+                <summary>Does CG matter while applying in these projects?</summary>
+                <div class="faq-content">
+                    While CGPA is an important metric for academic evaluation, professors often look at your overall profile, research experience, and skill set relevant to the project.
+                </div>
+            </details>
+            <details class="reveal" style="--d:0.16s">
+                <summary>If I have been selected for a project through FTP, am I eligible to apply for the upcoming projects in the portal?</summary>
+                <div class="faq-content">
+                    Generally, to ensure fair opportunities for all students, once you accept an offer through the FTP, you might be restricted from applying to further projects in the same cycle.
+                </div>
+            </details>
+            <details class="reveal" style="--d:0.24s">
+                <summary>After getting finalized for a project, can I back out from the same?</summary>
+                <div class="faq-content">
+                    Please contact the Students' International Relations Cell at irc@iitkgp.ac.in for guidance on this.
+                </div>
+            </details>
+            <details class="reveal" style="--d:0.32s">
+                <summary>Where can I find the ERP generated transcript?</summary>
+                <div class="faq-content">
+                    You can generate and download your official transcript from your ERP dashboard under the academic section.
+                </div>
+            </details>
+            <details class="reveal" style="--d:0.40s">
+                <summary>Does Students&rsquo; International Relations Cell provide any help while applying for a visa?</summary>
+                <div class="faq-content">
+                    Please contact the Students' International Relations Cell at irc@iitkgp.ac.in for guidance on this.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="footer-col footer-col-1 reveal">
+                <h4>Students' International Relations Cell</h4>
+                <p>Students' International Relations Cell (SIRC) is a student body working under the aegis of the Office of International Relations (OIR). It works to promote the exchange of students, faculties, and ideas between IIT Kharagpur and the international partners and establishing the globalization of IIT Kharagpur.</p>
+            </div>
+
+            <div class="footer-col footer-col-2 reveal" style="--d:0.12s">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">F.A.Q</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#blogs">FTP Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-3 reveal" style="--d:0.24s">
+                <h4>Contact Us</h4>
+                <p class="footer-address">Students' International Relations Cell<br>Indian Institute of Technology Kharagpur<br>Kharagpur, West Bengal<br>India - 721302</p>
+                <p><a href="tel:+919521850354" class="footer-link">+91 95218 50354</a></p>
+                <p><a href="mailto:irc@iitkgp.ac.in" class="footer-link">irc@iitkgp.ac.in</a></p>
+            </div>
+
+            <div class="footer-col footer-col-4 reveal" style="--d:0.36s">
+                <h4>Subscribe to our NewsLetter</h4>
+                <form class="newsletter-form" id="newsletterForm">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="form-note" id="formNote" role="status"></div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="year">2026</span> Students' International Relations Cell, IIT Kharagpur. All rights reserved.
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
